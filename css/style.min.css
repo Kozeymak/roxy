@@ -106,7 +106,7 @@ section {
   border-radius: 0;
   margin-bottom: 0;
   overflow: hidden;
-  min-height: 70vh; }
+  min-height: 80vh; }
   @media (max-width: 767px) and (orientation: landscape) {
     .jumbotron {
       min-height: 500px; } }
@@ -126,7 +126,7 @@ section {
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #333399, #ff00cc);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #333399, #ff00cc);
+    background: linear-gradient(to right, #333399, #07827e);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
   .jumbotron h1 {
     line-height: .9;
@@ -215,9 +215,9 @@ section {
 .rectangle-1 {
   width: 2000px;
   height: 400px;
-  background: #8E2DE2;
+  background: #114f4e;
   background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);
-  background: linear-gradient(to right, #4A00E0, #8E2DE2);
+  background: linear-gradient(to right, #1fb49b, #8E2DE2);
   transform-origin: 50% 150% 0;
   position: absolute;
   left: 0;
@@ -229,7 +229,7 @@ section {
   height: 400px;
   background: #8E2DE2;
   background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);
-  background: linear-gradient(to right, #4A00E0, #8E2DE2);
+  background: linear-gradient(to right, #8E2DE2, #8E2DE2);
   transform-origin: 65% 100% 0;
   position: absolute;
   right: 0;
@@ -805,7 +805,11 @@ section {
   margin-top: 10px;
 }
 
-.work-link {
+.goods-item a {
+  margin-top: 15px;
+}
+
+.link-delivery {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -814,6 +818,36 @@ section {
   padding-bottom: 8px;
   color: white;
   border-radius: 7px;
+  text-transform: uppercase;
 }
 
-.delivery {margin-left: 16.66%;}
+.delivery 
+{margin-left: 16.66%;}
+
+.flex-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.your-qr {
+  margin-bottom: 60px;
+}
+
+.hedder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.slogan {
+  margin-top: 10vh;
+  color: white;
+  z-index: 1;
+}
+
+.services {
+  font-size: 1.3rem;
+}
