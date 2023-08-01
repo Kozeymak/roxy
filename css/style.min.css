@@ -10,7 +10,8 @@ html, body {
 
 body {
   font-family: 'Roboto Condensed', sans-serif;
-  font-weight: 400; }
+  font-weight: 400;
+}
 
 h1,
 h2,
@@ -763,6 +764,12 @@ section {
       display: flex;
       flex-wrap: wrap;
     }
+    .how-to-get .container {
+      max-width: max-content;
+    }
+    .flex-prelist, .delivery {
+      width: 80% !important;
+    }
   }
 
 @media (max-width: 767px) {
@@ -894,6 +901,8 @@ section {
 .services {
   font-size: 1.3rem;
   line-height: 3rem;
+  margin-left: 8.3%;
+  margin-right: 8.3%;
 }
 
 .services:nth-child(2) {
@@ -958,7 +967,7 @@ section {
   color: white;
   padding: 5px 25px 5px 25px;
   text-shadow: 1px 1px 2px black;
-  margin-top: 48px;
+  margin-bottom: 48px;
   background: linear-gradient(to right, #1fb49b, #8E2DE2);
 }
 
@@ -967,8 +976,7 @@ section {
   width: 50%;
   justify-content: space-between;
   flex-wrap: wrap;
-  color: white;
-  text-shadow: 1px 1px 2px black;
+  color: black;
   height: max-content;
   margin: auto;
 }
@@ -978,8 +986,7 @@ section {
 }
 
 .footer-link a {
-  color: white;
-  text-shadow: 1px 1px 2px black;
+  color: black;
 }
 
 .footer-link {
