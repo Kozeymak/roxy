@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <link rel="icon" href="img/favicon-32x32.png"><!-- 32×32 -->
     <!--
      - Roxy: Bootstrap template by GettTemplates.com
      - https://gettemplates.co/roxy
@@ -46,16 +47,16 @@
         <div class="collapse navbar-collapse" id="navbar-nav-header">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">О нас</a>
+                    <a class="nav-link" href="#features">О нас</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Товары</a>
+                    <a class="nav-link" href="#portfolio">Товары</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Доставка</a>
+                    <a class="nav-link" href="#delivery">Доставка</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Контакты</a>
+                    <a class="nav-link" href="#reservation">Оформить заказ</a>
                 </li>
                 <li class="nav-item only-desktop">
                     <a class="nav-link" id="side-nav-open" href="#">
@@ -75,9 +76,10 @@
 			Доставка по Москве и Московской Области
 		</p>
 		<p>
-			<span class="fs-16 primary-color">+7 (926) 648 95-10</span>
+			<span class="fs-16 primary-color">8-(905)-428-42-93</span>
 		</p>
 		<p>QR-Brelok@yandex.ru</p>
+        <p>©QRBrelok.ru, 2023</p>
 	</div>
 </div><div id="side-search" class="sidenav">
 	<a href="javascript:void(0)" id="side-search-close">&times;</a>
@@ -98,7 +100,7 @@
 	
 </div>	<div class="jumbotron d-flex align-items-center hedder">
   <div class="container text-center">
-    <h1 class="display-1 mb-4 mt-4">QR<br>brelok</h1>
+    <h1 class="display-1">QR<br>brelok</h1>
   </div>
   <div class="slogan">
     <h2 class="section-title" data-aos="fade-up">
@@ -178,7 +180,7 @@
     </div>
 </section>
 
-<section class="how-to-get" style="background-image: url(img/fon-img.jpg);">
+<section class="how-to-get" style="background-image: url(img/fon-img.jpg);" id="service">
     <div class="container">
         <div class="section-content">
             <div class="title-wrap">
@@ -206,7 +208,7 @@
     </div>
 </section>
 
-<section id="features" class="bg-white">
+<section id="creation" class="bg-white">
     <div class="container">
         <div class="section-content">
             <!-- Section Title -->
@@ -251,7 +253,7 @@
 </section>
 
 
-<section id="section-featurettes">
+<section id="delivery">
 
     <div class="container fracture">
         <div class="section-content  delivery">
@@ -348,62 +350,65 @@
                             <b>Оформить заказ</b>
                         </h2>
                     </div>
-                    <form method="post" name="contact-us" action="">
+                    <form method="POST" name="contact-us" action="mail.php">
                         <div class="row">
                             <div class="form-list">
-                                <div class=" form-group">
-                                    <label for="name">ФИО</label>
-                                    <input type="text" class="form-control" id="name" name="name" placeholder="Иван Иванов Иванович">
-                                </div>
-    
-                                <div class=" form-group">
-                                    <label for="email">Email</label>
-                                    <input type="text" class="form-control" id="email" name="email" placeholder="Ivan69@yandex.ru">
-                                </div>
-    
-                                <div class=" form-group">
-                                    <label for="phoneNumber">Номер телефона</label>
-                                    <input type="number" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="89005003020">
-                                </div>
-    
-                                <div class=" form-group">
-                                    <label for="websiteUrl">Ссылка или фраза для QR-кода</label>
-                                    <input type="text" class="form-control" id="websiteUrl" name="websiteUrl" placeholder="https://vk.com/ivanivanovivanovich">
-                                </div>
-    
-                                <div class=" form-group">
-                                    <label for="adres">Адрес доставки</label>
-                                    <input type="text" class="form-control" id="adres" name="adres" placeholder="Москва, Электрозаводская дом 5">
+
+                                <div class="form-goods">
+                                    <div class=" form-group">
+                                        <label for="user_name">ФИО</label>
+                                        <input type="text" class="form-control" id="name" name="user_name" placeholder="Иван Иванов Иванович">
+                                    </div>
+        
+                                    <div class=" form-group">
+                                        <label for="user_email">Email</label>
+                                        <input type="text" class="form-control" id="email" name="user_email" placeholder="Ivan69@yandex.ru">
+                                    </div>
+        
+                                    <div class=" form-group">
+                                        <label for="user_phoneNumber">Номер телефона</label>
+                                        <input type="number" class="form-control" id="phoneNumber" name="user_phoneNumber" placeholder="89005003020">
+                                    </div>
+        
+                                    <div class=" form-group">
+                                        <label for="user_websiteUrl">Ссылка или фраза для QR-кода</label>
+                                        <input type="text" class="form-control" id="websiteUrl" name="user_websiteUrl" placeholder="https://vk.com/ivanivanovivanovich">
+                                    </div>
+        
+                                    <div class=" form-group">
+                                        <label for="user_adres">Адрес доставки</label>
+                                        <input type="text" class="form-control" id="adres" name="user_adres" placeholder="Москва, Электрозаводская дом 5">
+                                    </div>
                                 </div>
     
                                 <div class="form-title">
                                     <h4>Укажите количество товара!</h4>
                                     <div class="form-goods">
                                         <div class="form-group item1">
-                                            <label for="cercal-b">Круглый брелок</label>
-                                            <input type="number" class="form-control" id="cercal-b" name="cercal-b" value="0" min="0">
+                                            <label for="user_cercal-b">Круглый брелок</label>
+                                            <input type="number" class="form-control" id="cercal-b" name="user_cercal-b" value="0" min="0">
                                         </div>
             
                                         <div class="form-group item2">
-                                            <label for="square-b">Квадратный брелок</label>
-                                            <input type="text" class="form-control" id="square-b" name="square-b" value="0" min="0">
+                                            <label for="user_square-b">Квадратный брелок</label>
+                                            <input type="text" class="form-control" id="square-b" name="user_square-b" value="0" min="0">
                                         </div>
             
                                         <div class="form-group item3">
-                                            <label for="elipse-b">Овальный брелок</label>
-                                            <input type="text" class="form-control" id="elipse-b" name="elipse-b" value="0" min="0">
+                                            <label for="user_elipse-b">Овальный брелок</label>
+                                            <input type="text" class="form-control" id="elipse-b" name="user_elipse-b" value="0" min="0">
                                         </div>
             
                                         <div class="form-group item4">
-                                            <label for="opener-b">Открывалка брелок</label>
-                                            <input type="text" class="form-control" id="opener-b" name="opener-b" value="0" min="0">
+                                            <label for="user_opener-b">Открывалка брелок</label>
+                                            <input type="text" class="form-control" id="opener-b" name="user_opener-b" value="0" min="0">
                                         </div>
                                     </div>
                                 </div>
     
                                 <div class=" form-group">
-                                    <label for="message">Дополнительная информация</label>
-                                    <textarea class="form-control" id="message" name="message" style="resize: none;" placeholder="Для обратной связи предпочитаю Telegram"></textarea>
+                                    <label class="last-label" for="message">Дополнительная информация и дополнительные ссылки для заказа нескольких брелоков</label>
+                                    <textarea class="form-control" id="message" name="user_message" style="resize: none;" placeholder="Для обратной связи предпочитаю Telegram"></textarea>
                                 </div>
                                 <div class=" text-center">
                                     <button class="btn btn-primary btn-shadow btn-lg" type="submit" name="submit">Оформить заказ!</button>
@@ -429,7 +434,7 @@
             </div>
             <div class="footer-link">
             	<nav class="nav nav-mastfoot">
-	                <a class="nav-link" href="#">
+	                <a class="nav-link" href="https://t.me/QR_Brelok_Bot">
 	                	<i class="fab fa-telegram"></i>
 	                </a>
 	                <a class="nav-link" href="#">
