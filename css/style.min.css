@@ -779,6 +779,9 @@ section {
     }
     .flex-prelist, .delivery {
       width: 80% !important;
+      display: block !important;
+      margin: 0 !important;
+      font-size: 1rem !important;
     }
   }
 
@@ -973,12 +976,16 @@ section {
 }
 
 .action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   border-radius: 10px;
   color: white;
   padding: 5px 25px 5px 25px;
   text-shadow: 1px 1px 2px black;
   margin-bottom: 48px;
   background: linear-gradient(to right, #1fb49b, #8E2DE2);
+  font-size: 1.3rem;
 }
 
 .footer-contact {
