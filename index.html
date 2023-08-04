@@ -134,7 +134,7 @@
             <!-- Section Title -->
             <div class="title-wrap your-qr" data-aos="fade-up">
                 <h2 class="section-title">
-                    <b>Что мы предлагаем?</b>
+                    <b>Что мы <nobr>предлагаем?</nobr></b>
                 </h2>
                 <div class="services">
                     <p>
@@ -191,7 +191,7 @@
             <ul class="flex-prelist">
                 <li>
                     <p>
-                        <b>Пришлите нам информацию, которую хотите записать в QR-код:</b><br>
+                        <b>Пришлите нам информацию, которую хотите записать в QR-код</b><br>
                         В один QR-код можно записать 1 пункт из перечня ниже:
                     </p>
                     <ul class="pl-0 flex-list">
@@ -360,27 +360,27 @@
                                 <div class="form-goods">
                                     <div class=" form-group">
                                         <label for="user_name">ФИО</label>
-                                        <input type="text" class="form-control" id="name" name="user_name" placeholder="Иванов Иван Иванович">
+                                        <input required type="text" class="form-control" id="name" name="user_name" placeholder="Иванов Иван Иванович">
                                     </div>
         
                                     <div class=" form-group">
                                         <label for="user_email">Email</label>
-                                        <input type="text" class="form-control" id="email" name="user_email" placeholder="Ivan69@yandex.ru">
+                                        <input required type="text" class="form-control" id="email" name="user_email" placeholder="Ivan69@yandex.ru">
                                     </div>
         
                                     <div class=" form-group">
                                         <label for="user_phoneNumber">Номер телефона</label>
-                                        <input type="number" class="form-control" id="phoneNumber" name="user_phoneNumber" placeholder="89005003020">
+                                        <input required type="number" class="form-control" id="phoneNumber" name="user_phoneNumber" placeholder="89005003020">
                                     </div>
         
                                     <div class=" form-group">
                                         <label for="user_websiteUrl">Ссылка или фраза для QR-кода</label>
-                                        <input type="text" class="form-control" id="websiteUrl" name="user_websiteUrl" placeholder="https://vk.com/ivanovivanivanovich">
+                                        <input required type="text" class="form-control" id="websiteUrl" name="user_websiteUrl" placeholder="https://vk.com/ivanovivanivanovich">
                                     </div>
         
                                     <div class=" form-group">
                                         <label for="user_adres">Адрес доставки</label>
-                                        <input type="text" class="form-control" id="adres" name="user_adres" placeholder="Москва, Электрозаводская дом 5">
+                                        <input required type="text" class="form-control" id="adres" name="user_adres" placeholder="Москва, Электрозаводская дом 5">
                                     </div>
                                 </div>
     
@@ -389,29 +389,29 @@
                                     <div class="form-goods">
                                         <div class="form-group item1">
                                             <label for="user_cercal-b">Круглый брелок</label>
-                                            <input type="number" class="form-control" id="cercal-b" name="user_cercal-b" value="0" min="0">
+                                            <input required type="number" class="form-control" id="cercal-b" name="user_cercal-b" value="0" min="0">
                                         </div>
             
                                         <div class="form-group item2">
                                             <label for="user_square-b">Квадратный брелок</label>
-                                            <input type="text" class="form-control" id="square-b" name="user_square-b" value="0" min="0">
+                                            <input required type="text" class="form-control" id="square-b" name="user_square-b" value="0" min="0">
                                         </div>
             
                                         <div class="form-group item3">
                                             <label for="user_elipse-b">Овальный брелок</label>
-                                            <input type="text" class="form-control" id="elipse-b" name="user_elipse-b" value="0" min="0">
+                                            <input required type="text" class="form-control" id="elipse-b" name="user_elipse-b" value="0" min="0">
                                         </div>
             
                                         <div class="form-group item4">
                                             <label for="user_opener-b">Открывалка брелок</label>
-                                            <input type="text" class="form-control" id="opener-b" name="user_opener-b" value="0" min="0">
+                                            <input required type="text" class="form-control" id="opener-b" name="user_opener-b" value="0" min="0">
                                         </div>
                                     </div>
                                 </div>
     
                                 <div class=" form-group">
                                     <label class="last-label" for="message">Дополнительная информация и дополнительные ссылки для заказа нескольких брелоков</label>
-                                    <textarea class="form-control" id="message" name="user_message" style="resize: none;" placeholder="Для обратной связи предпочитаю Telegram"></textarea>
+                                    <textarea class="form-control" id="message" name="user_message" style="resize: none;" placeholder="..."></textarea>
                                 </div>
                                 <div class=" text-center">
                                     <button class="btn btn-primary btn-shadow btn-lg" type="submit" name="submit">Оформить заказ!</button>

@@ -23,7 +23,7 @@ $mail->SMTPAuth = true;                               // Enable SMTP authenticat
 $mail->Username = 'Brelok-QR-Bot@yandex.ru'; // Ваш логин от почты с которой будут отправляться письма
 $mail->Password = 'qr-01082023-qr'; // Ваш пароль от почты с которой будут отправляться письма
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
-$mail->Port = 465; // TCP port to connect to / этот порт может отличаться у других провайдеров
+$mail->Port = 25; // TCP port to connect to / этот порт может отличаться у других провайдеров
 
 $mail->setFrom('Brelok-QR-Bot@yandex.ru'); // от кого будет уходить письмо?
 $mail->addAddress('Brelok-QR@yandex.ru');     // Кому будет уходить письмо 
